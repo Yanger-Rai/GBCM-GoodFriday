@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta
+      name="description"
+      content="Brought to you by GBCM | Test your Gorkhali-Ness!"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="./iconmonstr-cat-3-240.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>GBCM | Good Friday Test</title>
+  </head>
+  <body>
+    <header class="quiz-container">
+      <div class="question-number">
+        <h3>
+          Question <span class="question-num-value"></span> of
+          <span class="total-question"></span>
+        </h3>
+      </div>
+      <div class="question"></div>
+      <div class="options">
+        <div id="0" class="option1" onclick="check(this)"></div>
+        <div id="1" class="option2" onclick="check(this)"></div>
+        <div id="2" class="option3" onclick="check(this)"></div>
+      </div>
+      <div class="button">
+        <button type="button" class="btn" onclick="next()">Next</button>
+      </div>
+      <div class="answers-tracker"></div>
+    </header>
+
+    <header class="quiz-over">
+      <div class="box">
+        <h1>
+          Good Try <br />
+          You Got <span class="correct-answers"></span> out of
+          <span class="total-questions2"></span> answers correct!<br />
+          That's <span class="percentage"></span>
+        </h1>
+        <button type="button" onclick="tryAgain()">Try Again</button>
+      </div>
+    </header>
+
+    <header class="quiz-pass">
+      <div class="box">
+        <a href="#"
+          ><img
+            src="./img/granny1.png"
+            style="height: auto; max-width: 100%; border: none; display: block;"
+            alt="nepali-woman"
+        /></a>
+        <h1>
+          B-lessed Good Friday! <br />
+          You Scored 100%!
+        </h1>
+        <button type="button" onclick="tryNoMore()">God Bless You!</button>
+      </div>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
